@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(rgb(31, 163, 75),rgb(177, 61, 177));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    margin-top: 2%;
+    position: relative;
+    top:0; left: 0; right:0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    z-index: 1000;
+    padding:  0px 7%;
+}
+header .fashion{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: red;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 30px;
+    padding: 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header .navbar ul li a:hover{
+    color: red;
+    transition: 1s;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.wrap{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background: green;
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea {
+    background: white;
+    color: black;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.sect{
+    min-height: 70vh;
+
+}
+.comment{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+
+}
+.pic{
+    width: 100px;
+    display: inline-block;
+    display: flex;
+}
+.text{
+    width: 300px;
+    height: 150px;
+    box-shadow: 0 0 8px rgb(3, 3, 10);
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px 20px;
+    background:rgb(35, 129, 35);
+
+}
+
+
+
+@media only screen and (max-width:700px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }  
+    header .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background: linear-gradient(rgb(31, 163, 75),rgb(177, 61, 177));
+        border-top: 1px solid rgba(0, 0, 0,.1)
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    .wrap{
+        min-height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        background: green;
+        border-radius: 30px;
+        width: 240px;
+        height: 210px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea {
+        background: white;
+        color: black;
+        font-size: 15px;
+        width: 200px;
+        border-radius: 20px;
+        padding: 7px;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-top: 3%;
+    }
+    .sect{
+        min-height: 70vh;
+    
+    }
+    .comment{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px 0;
+    
+    }
+    .pic{
+        width: 100px;
+        display: inline-block;
+        display: flex;
+    }
+    .text{
+        width: 300px;
+        height: 150px;
+        box-shadow: 0 0 8px rgb(3, 3, 10);
+        border-radius: 5px;
+        text-align: left;
+        padding: 10px 20px;
+        background:rgb(35, 129, 35);
+    
+    }
+    .done{
+        height: 200px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+}
