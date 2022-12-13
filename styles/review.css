@@ -139,7 +139,7 @@ textarea {
     .wrapper{
         background: green;
         border-radius: 30px;
-        width: 240px;
+        width: 270px;
         height: 210px;
         flex-direction: column;
         display: flex;
@@ -160,6 +160,7 @@ textarea {
     }
     .sect{
         min-height: 70vh;
+        margin-left:3%;
     
     }
     .comment{
